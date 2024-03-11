@@ -1,0 +1,60 @@
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-base: #F2F2F2;
+    -fx-background: #FAFAFA;
+}
+
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #5CACEE;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-color: #3B5998;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #3B5998;
+}
+
+.text-field, .text-area, .choice-box {
+    -fx-border-color: #BDBDBD;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 4px 8px;
+}
+
+.text-field:focused, .text-area:focused, .choice-box:focused {
+    -fx-border-color: #3B5998;
+}
+
+.text-area {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
+
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+#lbMensaje {
+    -fx-background-color: #4E9CAF;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}

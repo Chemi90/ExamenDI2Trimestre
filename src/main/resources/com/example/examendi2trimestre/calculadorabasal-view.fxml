@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="637.0" prefWidth="541.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examendi2trimestre.CalculadoraBasalController">
+   <center>
+      <VBox alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Calculadora de metabolismo" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Nombre" />
+                  <TextField fx:id="tfNombre">
+                     <tooltip>
+                        <Tooltip text="Nombre completo" />
+                     </tooltip>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Sexo" />
+                  <TextField fx:id="tfSexo">
+                     <tooltip>
+                        <Tooltip text="Hombre o Mujer" />
+                     </tooltip>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Peso" />
+                  <TextField fx:id="tfPeso">
+                     <tooltip>
+                        <Tooltip text="en kg" />
+                     </tooltip>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Edad" />
+                  <TextField fx:id="tfEdad">
+                     <tooltip>
+                        <Tooltip text="pon los años" />
+                     </tooltip>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Estatura" />
+                  <TextField fx:id="tfTalla">
+                     <tooltip>
+                        <Tooltip text="En centímetros" />
+                     </tooltip>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="TA" />
+                  <ChoiceBox fx:id="cbActividad" prefWidth="150.0">
+                     <tooltip>
+                        <Tooltip text="Selecciona el tipo de actividad" />
+                     </tooltip>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Observaciones" />
+                  <TextArea fx:id="tfObservaciones" prefHeight="200.0" prefWidth="200.0">
+                     <tooltip>
+                        <Tooltip text="Cualquier dato relevante" />
+                     </tooltip>
+                  </TextArea>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#calcular" text="Guardar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDescargar" mnemonicParsing="false" onAction="#generarInforme" text="Descargar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Label fx:id="lbMensaje" text="Mensaje usuario" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
